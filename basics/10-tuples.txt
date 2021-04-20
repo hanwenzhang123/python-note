@@ -1,0 +1,40 @@
+lists
+A python list is a way to store many pieces of data in one container, 
+any kind of data, including integers, strings and even other lists
+lists are mutable, we can add element and remove elements from them
+
+tuples
+tuples are immutable, they cannot be changed
+elements cannot be added, removed or reordered
+tuples are also zero-based
+
+
+# A tuple might contain data about a person (heterogeneous type mixture)
+person_a = (name, age, occupation, address)
+
+# A list might contain a list of people (homogeneous type mixture - all tuples!)
+people = [person_a, person_b, person_c]
+
+
+
+Tuple Syntax
+
+# A list
+groceries = ['apples', 'oranges', 'lettuce', 'cheddar cheese']
+
+# A tuple!
+groceries = 'apples', 'oranges', 'lettuce', 'cheddar cheese'
+
+# A tuple!
+groceries = ('apples', 'oranges', 'lettuce', 'cheddar cheese')
+
+To convert this list to a tuple, we can do one of two things: remove the square brackets entirely, or replace them with parentheses.
+
+
+If a tuple only has one element, that element must be followed by a comma
+
+# A tuple!
+my_tuple = 1,
+
+# The same tuple!
+my_tuple = (1,)

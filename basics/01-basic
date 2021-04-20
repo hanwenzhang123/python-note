@@ -1,0 +1,101 @@
+# Python Data Types: Python has five standard Data Types
+# Numbers - var = 382
+# String - firstName = 'john'
+# List - A = [2, 4, 'john']
+# Tuple - myGroup = ('Rhino', 'Grasshopper', 'Flamingo', 'Bongo')
+# Dictionary - room_num = {'john': 425, 'tom': 212}
+
+
+# Tuples are a group of values like a list and are manipulated in similar ways
+# Dictionaries in Python are lists of Key:Value pairs.
+
+
+# Variable Naming Rules
+# Can contain both letters and digits, but must begin with either a letter or an underscore.
+# Remember that case matters, you can use upper case, but by convention we do not.
+# They cannot be a Python keyword
+
+first_name = "Ada"
+
+print('Hello, Craig")
+print('Hello,', first_name)
+
+print ('Craig is learning Python')
+print (first_name, 'is learning Python')
+      
+      
+
+# When you call the input function, it outputs the prompt and then it waits for an answer.
+# once the answer to the prompt is given, and the user presses Enter, the result is returned.
+# This input returns a string
+      
+      input('How are you today?')
+      How are you today? Great
+      'Great'
+      
+      current_mood = input ('How are you today?')
+      How are you today? Wonderful
+      current_mood
+      "wonderful"
+      
+      
+      first_name = input ('what is your first name?')
+      print('Hello,', first_name)
+      print (first_name, 'is learning Python')
+      
+      
+favorite_color = input("What is your favorite color? ")
+print('The color', favorite_color, 'is a great color!')
+
+
++:
+How do you combine two strings? 
+String 1 + String 2
+
+The + operator doesn’t just add two numbers, it can also “add” two strings! 
+The process of combining two strings is called string concatenation. 
+message = string1 + string2 + string3 + string4 + string5 + string6
+print(message)
+
+
+
++=:
+a shorthand for updating variables. 
+When you have a number saved in a variable and want to add to the current value of the variable, you can use the += (plus-equals) operator.
+What is the value of total_cost that gets printed? # 15
+
+total_cost = 5
+total_cost += 10
+print(total_cost)
+
+
+
+Multi-line Strings:
+How does one define a multi-line string in Python?
+"""
+Like 
+this
+"""
+
+
+
+
+What is the output of the following code?  #42
+
+cool_number = 12 + 30
+cool_number * 5
+print(cool_number)
+
+#Multiplying the variable by 5 does not change the variable.
+
+
+
+# f stands for format, it tells python that there will be extra tasks to do with this string before printing to the console
+name = input('What is your name? ')
+last_name = input('What is your last name? ')
+color = input('What is your favorite color? ')
+
+print(f'My name is {name} {last_name}')
+print(f'My favorite color is {color}')
+
+

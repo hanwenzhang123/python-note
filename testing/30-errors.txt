@@ -1,0 +1,42 @@
+Finding bugs is a huge part of a programmer’s life. 
+
+The three types of Python errors:
+
+SyntaxError: Error caused by not following the proper structure (syntax) of the language.
+NameError: Errors reported when the interpreter detects an object that is unknown.
+TypeError: Errors thrown when an operation is applied to an object of an inappropriate type.
+
+There is also another type of error that doesn’t have error messages that we will cover down the line:
+
+Logic errors: Errors found by the programmer when the program isn’t doing what it is intending to do.
+Remember, Google and Stack Overflow are a programmer’s BFFs (best friends forever) in situations where an error is giving you a lot of trouble. 
+
+
+SyntaxError means there is something wrong with the way your program is written — 
+punctuation that does not belong, a command where it is not expected, or a missing parenthesis can all trigger a SyntaxError.
+
+Some common syntax errors are:
+
+Misspelling a Python keyword.
+Missing colon :.
+Missing closing parenthesis ), square bracket ], or curly brace }.
+
+
+
+NameError is reported by the Python interpreter when it detects a variable that is unknown.
+
+Some common name errors are:
+
+Misspelling a variable name.
+Forgetting to define a variable.
+
+
+
+A TypeError is reported by the Python interpreter when an operation is applied to a variable of an inappropriate type.
+This can occur in Python when one attempts to use an operator on something of the incorrect type.
+
+Some common type errors are:
+
+Accidentally adding or subtracting a string value.
+Call a function on something of the incorrect type.
+

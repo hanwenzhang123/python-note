@@ -1,0 +1,124 @@
+number:
+
+integers - int - whole number - 1, 2, 3
+decimal - float - floating-point number - 1.5
+An int is a whole number. A float is a number’s decimal representation.
+once using decimal number, it becomes floating format
+_ - last number
+round(_) rounding up/down the last number - return back to integers
+order of operations - PEMDAS - please excuse my dear aunt sally
+parenthesis, exponents, multiplication, division, addiction, substraction
+23//3 - just get back the integer portion - 7
+23 % 3 - remainder in integer form by using modulus % - 2
+(3 goes in 23 7 times, 3 times 7 is 21, so 23 - 21 is our answer 2) 
+
+>>> "11" + 2 - it will cause a typeError because you can not add a string and an int together
+
+
+
+strings: '' or ""
+
+after you create a string, it cannot be changed. - immutable or impossible to modify.
+'I can\'t understand'
+\ - treat that quote like a character instead of treating it like part of the syntax
+"I can't understand" - this works with double quotation
+
+escape sequence to add a new blank line is \n for new line.
+"I can't ... \n\neven"
+
+>>> """she said, "I can't....
+...
+... event."
+... """ 
+- waiting for triple quotes here
+- 'She said, "I can\'t...\n\neven."\n'
+
+print(_) - print last result
+
+dessert = "chocolate" + " and marshmallows"
+dessert = dessert + " and graham crackers"
+dessert += ", yum"
+>>> dessert
+'chocolate and marshmallows and graham crackers, yum'
+dessert += "!" * 20
+>>> dessert
+'chocolate and marshmallows and graham crackers, yum!!!!!!!!!!!!!'
+
+
+
+String Methods:
+A method is a function that is owned by an object. You can access these by using dot notation.
+
+quote = "A person who never made a mistake never tried anything new"
+len(quote) - calculating the number of the characters including spaces
+58
+
+quote.upper() - make the quote uppercase, it won't change the original string
+quote.lower() - make everything lowercase
+quote.title() - capitalize all the title letter
+quote.capitalize() - first character upper case the rest lower case
+
+str(~) - reverse everything to string
+help(str) manual of string 
+__add__   - start with __ (double underscore) as a magical method
+press "Q" to drop off help documentation
+
+subject_template = "Thanks for learning {} with us {}!"
+subject_template.format("python", "valentina")
+subject_template.format("java", "shadd")
+
+"You just bought {} {}.".format(3, "fidget cubes")
+You just bought 3 fidget cubes
+
+
+
+Booleans:
+
+"ham" in "hamster" - True
+"popcorn" in "hamster" - False
+has_taco = "taco" in "catacombs"
+has_taco - True
+
+bool(42) - True (as long as it is not 0)
+bool(0) - False
+bool("burrito") - True (any object that is not empty)
+bool("") - False
+not True - False
+not False - True
+True and True and True and False - False
+False or True - True
+(False or False or True) and (True and False) - False
+(False or False or True) and not (True and False) - True
+
+
+
+Exponents **
+
+# 2 to the 10th power, or 1024
+print(2 ** 10)
+ 
+# 8 squared, or 64
+print(8 ** 2)
+ 
+# 9 * 9 * 9, 9 cubed, or 729
+print(9 ** 3)
+ 
+# We can even perform fractional exponents
+# 4 to the half power, or 2
+print(4 ** 0.5)
+
+
+
+Modulo %
+- The modulo operator is indicated by % and gives the remainder of a division calculation. 
+- If the number is divisible, then the result of the modulo operator will be 0.
+
+# Prints 4 because 29 / 5 is 5 with a remainder of 4
+print(29 % 5)
+ 
+# Prints 2 because 32 / 3 is 10 with a remainder of 2
+print(32 % 3)
+ 
+# Modulo by 2 returns 0 for even numbers and 1 for odd numbers
+# Prints 0
+print(44 % 2)
