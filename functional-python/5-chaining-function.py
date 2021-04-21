@@ -68,7 +68,7 @@ def is_long_book(book):
 
 ### CHAINING ###
 def has_roland(book):
-    return any(["Roland" in subject for subject in book.subjects])
+    return any(["Roland" in subject for subject in book.subjects]) #anything here passed even just one true will be returned True
 
 def titlecase(book):
     book = copy(book)
@@ -81,7 +81,16 @@ def is_good_deal(book):
     return book.price <= 5
 
 cheap_books = sorted(
-    filter(is_good_deal, map(sales_price, BOOKS)),
+    filter(is_good_deal, map(sales_price, BOOKS)),      #map() here we turn all our book to sales price then filter out if it good deal
     key=attrgetter('price')
 )
 print(cheap_books[0].price)
+
+
+
+
+
+#exercise
+#map and filter
+
+#map and filter comprehension
