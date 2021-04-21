@@ -61,9 +61,49 @@ def is_long_book(book):   #like asking question usually start with is_
     """Does a book have 600+ pages?"""
     return book.number_of_pages >= 600
   
-long_books = list(filter(is_long_book, BOOKS) #like map(), if we want to get each of them into a list, we need list()
+long_books = list(filter(is_long_book, BOOKS)) #like map(), if we want to get each of them into a list, we need list()
 print(len(BOOKS)) #same result
                   
 long_books2 = [book for book in BOOKS if book.number_of_pages >= 600]
 print(len(long_books2)) #same result
                   
+
+    
+#exercise
+#filter
+import datetime
+
+dates = [
+    datetime.datetime(2012, 12, 15),
+    datetime.datetime(1987, 8, 20),
+    datetime.datetime(1965, 2, 28),
+    datetime.datetime(2015, 4, 29),
+    datetime.datetime(2012, 6, 30),
+]
+#Write a function named is_2012 that accepts a single argument and returns whether that argument's year attribute is equal to 2012.
+def is_2012(argument):
+    if argument.year == 2012:
+        return True
+#create a variable named dt_2012 that uses filter() and is_2012 to return only the datetimes from dates that are from the year 2012.
+dt_2012 = filter(is_2012, dates)
+
+
+
+#filter comprehension
+words = [
+    'yellow',
+    'red',
+    'yesterday',
+    'tomorrow',
+    'maybe',
+    'zucchini',
+    'eggplant',
+    'year',
+    'month',
+    'yell',
+    'yonder',
+    'today',
+]
+
+#Create a variable named y_words that uses a list comprehension to only contain the words from words that start with the letter "y".
+y_words = [letter for letter in words if letter[0] == 'y']
