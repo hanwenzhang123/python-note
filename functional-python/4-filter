@@ -1,0 +1,6 @@
+filter() takes a function and an iterable. The function, like with map(), takes only a single argument and is applied to each item in the iterable. 
+If the function returns a truthy value for the item, the item is sent back to filter() which, ultimately, returns a new iterable of the filtered items.
+
+You can achieve the same effect with [item for item in iterable if func(item)]. Again, like with map(), this can be more quickly readable for small applications.
+
+I mentioned filterfalse(). This function works just like filter() but only returns things where the filter function gives back a False or non-truthy value. 
