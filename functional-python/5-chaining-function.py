@@ -89,8 +89,54 @@ print(cheap_books[0].price)
 
 
 
-
 #exercise
 #map and filter
+import datetime
+
+birthdays = [
+    datetime.datetime(2012, 4, 29),
+    datetime.datetime(2006, 8, 9),
+    datetime.datetime(1978, 5, 16),
+    datetime.datetime(1981, 8, 15),
+    datetime.datetime(2001, 7, 4),
+    datetime.datetime(1999, 12, 30)
+]
+
+today = datetime.datetime.today()
+
+#Create a function named is_over_13 that takes a datetime and returns whether or not the difference between that datetime and today is 4745 days (13 years × 365 days, ignoring leap years) or more.
+def is_over_13(dt):
+    # compare total days
+    delta = today - dt
+    return delta.days >= 4745
+
+#Create a function named date_string that takes a datetime and returns a string like "May 20" using strftime. The format string is "%B %d".
+def date_string(dt):
+    return dt.strftime("%B %d")
+
+#Use map() and filter(), along with your two functions, to create date strings for every datetime in birthdays so long as the datetime is more than 4745 days (13 years × 365 days, ignoring leap years) old.
+birth_dates = map(date_string, filter(is_over_13, birthdays))
+
+
+
 
 #map and filter comprehension
+#Using c_to_f and a list comprehension, create a variable named good_temps. 
+#Convert each Celsius temperature into Fahrenheit, but only if the Celsius temperature is between 9 and 32.6.
+
+temperatures = [
+    37,
+    0,
+    25,
+    100,
+    13.2,
+    29.9,
+    18.6,
+    32.8
+]
+
+def c_to_f(temp):
+    """Returns Celsius temperature as Fahrenheit"""
+    return temp * (9/5) + 32
+
+good_temps = [c_to_f(temp) for temp in temperatures if temp > 9 and temp < 32.6]
