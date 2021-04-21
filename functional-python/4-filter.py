@@ -61,7 +61,7 @@ def is_long_book(book):   #like asking question usually start with is_
     """Does a book have 600+ pages?"""
     return book.number_of_pages >= 600
   
-long_books = list(filter(is_long_book, BOOKS) #if we want to get each of them into a list, we need list()
+long_books = list(filter(is_long_book, BOOKS) #like map(), if we want to get each of them into a list, we need list()
 print(len(BOOKS)) #same result
                   
 long_books2 = [book for book in BOOKS if book.number_of_pages >= 600]
