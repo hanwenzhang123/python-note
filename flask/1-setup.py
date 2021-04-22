@@ -17,3 +17,4 @@ app = Flask(__name__) # #use our current namespace is
 def index():
     return 'Hanwen Zhang'
   
+app.run(debug=True, port=8000, host='0.0.0.0')
