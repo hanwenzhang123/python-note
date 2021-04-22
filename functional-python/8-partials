@@ -1,0 +1,4 @@
+functools.partial lets you preset some arguments to a function. 
+You can then call the new function with the remaining arguments as needed. 
+This often ends up being really handy when used with map() and filter().
+
