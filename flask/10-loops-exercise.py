@@ -53,3 +53,9 @@ def index():
   </li>
   {% endfor %}
 </ul>
+
+
+
+#question
+I have a list named names. I want to loop over it and print out the names. Complete the following code:
+{% for name in names %}
