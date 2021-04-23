@@ -1,2 +1,2 @@
 # python-note
-Document the major python concepts I have learned throughout the courses.
+Document the major concepts I have learned throughout the courses.
