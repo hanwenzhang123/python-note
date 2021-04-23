@@ -25,3 +25,12 @@ def index():
 def fishy():
     flash("Hello")
     return redirect(url_for('index'))
+  
+  
+  
+  #Question
+  How would I show the message "Thanks for answering!" to visitors as a temporary message?
+  flash("thank you for visiting")
+
+  
+ 
