@@ -30,3 +30,11 @@ def teachers():
 
 What are the two magic directories for Flask to find template files and static files?
 templates/ and static/
+
+
+What global object represents a client asking for a view from your app?
+request
+
+
+How do you print something in a Flask template?
+{{and}}
