@@ -18,3 +18,15 @@ def index():
     return 'Hanwen Zhang'
   
 app.run(debug=True, port=8000, host='0.0.0.0')
+
+
+
+#question
+Attach the following view to my app with the route of /teachers.
+@app.route('/teachers')
+def teachers():
+    return 'We have lots of teachers!'
+
+
+What are the two magic directories for Flask to find template files and static files?
+templates/ and static/
