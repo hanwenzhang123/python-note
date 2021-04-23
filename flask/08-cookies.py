@@ -36,3 +36,12 @@ def save():
     response = make_response()
     response.set_cookie('treehouse', 'python')
     return response
+
+  
+  
+  
+  #question
+  I need a response object before I can attach a cookie. Help me out:
+
+response = make_response()
+response.set_cookie('thanks', 'a bunch!')
