@@ -1,6 +1,14 @@
 View: A view is a function that returns an HTTP response. This response has to be a string but can be any string you want.
 Route: A route is the URL path to a view. They always start with a forward slash / and can end with one if you want.
 
+Local Setup Steps
+Create a folder for your project
+Open your folder in your IDE
+Open the terminal in your IDE
+Create a virtual environment: Mac: python3 -m venv env
+Activate your environment: Mac: source ./env/bin/activate
+Install Flask - pip install flask
+Create requirements file - pip freeze > requirements.txt
 
 #create an app:
 
