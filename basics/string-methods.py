@@ -119,3 +119,15 @@ def make_spoonerism(word1, word2):
 print(make_spoonerism("Codecademy", "Learn")) # should print Lodecademy Cearn
 print(make_spoonerism("Hello", "world!")) # should print wello Horld!
 print(make_spoonerism("a", "b")) # should print b a
+
+
+
+#Add Exclamation
+def add_exclamation(word):
+  while(len(word) < 20):
+    word += "!"
+  return word
+
+print(add_exclamation("Codecademy")) # should print Codecademy!!!!!!!!!!
+print(add_exclamation("Codecademy is the best place to learn")) # should print Codecademy is the best place to learn
+
