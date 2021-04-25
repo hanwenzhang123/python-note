@@ -2,7 +2,7 @@
 >>> os.path.exists('bootstrap')#True
 >>> os.path.exists('bootstrap/js/npm.js')#True
 
->>> open('test_file.txt', 'a').close()  #open then exit
+>>> open('test_file.txt', 'a').close()  #open then exit, The 'a' is a flag that means "to append".
 
 os.mkdir('templates')
 os.makedirs('templates/layouts/mobiles')
