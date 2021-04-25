@@ -25,6 +25,15 @@ Paths:
 import os
 
 def absolute(path, root):
+    if(os.path.isabs(path)):
+        return path
+    else:
+        return root + path
+ 
+
+import os
+
+def absolute(path, root):
     if(not os.path.isabs(path)):
         new_path = ''.join((root, path))
         return new_path
