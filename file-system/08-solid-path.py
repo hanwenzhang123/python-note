@@ -19,9 +19,9 @@ if __name__ == '__main__':
   main()
   
   
-  #solid path
+#solid path
   
- #I'd like you to change how get_root works. 
+#I'd like you to change how get_root works. 
 #I still want to ask for a path but if the path is relative, change it into an absolute path. 
 #You can assume that the path is relative from the current working directory. 
 #The function should always return an absolute path.
