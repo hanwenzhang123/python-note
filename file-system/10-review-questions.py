@@ -1,28 +1,32 @@
 What does `os.path.isabs()` tell us?
 whether or not a path is absolute
 
-When we used os.mkdir() and give it a path that already exists, it throws a FileExistsError.
-
 What function should I use if I want to move one file or directory to a new location but the new location might not currently exist?
 os.renames
 
 When you delete a file or directory using os.rmdir or os.remove, where does the file or directory go?
+It is immediately deleted
 
 When you use os.removedirs() to delete one or more directories, if the directory is *not* empty, what exception is thrown?
-
-os.path.join() works just like str.join() and you do not need to provide the combining string, either a forward or backward slash.
-
-
-When you're using pathlib.Path, you can use / to join pieces of a path.
+OSError
 
 I want to delete a directory. Finish this snippet:
-os.("/grades/students.json")
+os.rmdir("/grades/students.json")
 
 What directory does .. represent?
+The directory above the current one
 
 Which of these is likely the root directory on a Windows machine?
 F:\
-  
+
+os.path.join() works just like str.join() and you do not need to provide the combining string, either a forward or backward slash.
+
+When you're using pathlib.Path, you can use / to join pieces of a path.
+
+When we used os.mkdir() and give it a path that already exists, it throws a FileExistsError.
+
+
+
   I want to change a file's filename. Which method should I use?
   os.rename
   
@@ -39,4 +43,4 @@ F:\
   
  When you delete a file with os.remove, that file is not placed in the system trash.
 
-Youu are not guaranteed to have a visible (in the file system) file when using tempfile.TemporaryFile
+ You are not guaranteed to have a visible (in the file system) file when using tempfile. TemporaryFile
