@@ -33,6 +33,11 @@ def delete_by_date(date):
     for f in os.listdir(os.getcwd() + '/backups'):
         if date in f:
             os.remove('backups/' + f)
-
-
+            
+#Now create a second function named delete_by_user that works similarly but deletes files that have a particular username in their filename.
+            
+def delete_by_user(date):
+    for f in os.listdir(os.getcwd() + '/backups'):
+        if date in f:
+            os.remove('backups/' + f)
 
