@@ -20,11 +20,11 @@ Then you're going to get a bad result.
 
   
 #Questions
-Which of the following best defines the term "feature" as it relates to machine learning?
-A feature is one characteristic of an example.
-
 Which of the following best defines the term "example" as it relates to machine learning?
 An example is a single element in a dataset.
+
+Which of the following best defines the term "feature" as it relates to machine learning?
+A feature is one characteristic of an example.
 
 Which of the following best defines the term "classifier" as it relates to machine learning?
 A classifier is a type of algorithm or model that makes a prediction about how a piece of data should be categorized.
@@ -33,5 +33,4 @@ Which of the following best defines the term "label" as it relates to machine le
 A label can be thought of as a category for data, or a prediction from a classification algorithm.
 
 A classifier attempts to assign a label.
-
   
