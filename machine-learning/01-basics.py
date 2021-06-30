@@ -35,3 +35,40 @@ Clustering: An unsupervised machine learning model that attempts to group simila
   e.g. suggested friends, suggested videos, advertisement sites
   
   
+#Machine Learning Framework
+Most approaches to machine learning can be described using statistical analysis and math, 
+which means that some of the components for a spam filter that classifies something as spam or not spam can be reapplied to another similar problem, 
+like classifying different types of zoo animals based on their physical appearance. 
+For this reason, there are many high level machine learning frameworks that already have all the low level code written, 
+so you can just plug your code and your data into pre-existing models.
+
+#Machine Learning Frameworks
+scikit-learn
+TensorFlow
+Machine Learning on AWS
+IBM Watson
+Microsoft Cognitive Toolkit
+Google's Cloud AI
+PyTorch
+Caffe2
+Keras
+Apache MXNet
+
+
+#Questions
+
+Which of the following best describes supervised learning?
+  Supervised learning is when a machine intelligence predicts a category or a quantity, using models of classification and regression, respectively.
+Which of the following best describes unsupervised learning?
+	Unsupervised learning is when a computer analyzes unlabeled data and attempts to recognize patterns. 
+  The most common unsupervised models use clustering to group similar things together.
+  
+Which of the following best describes the scope of machine learning?
+  Machine learning encompasses many different ideas, programming languages, frameworks, and approaches to the subject.
+
+Which of the following are applications of machine learning?
+  Self-driving cars
+ 	Digital voice assistants
+ 	Chat bots
+
+
